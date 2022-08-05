@@ -1,0 +1,80 @@
+<body>
+    <div class="top-section">
+        <div class="row">
+            <div class="col-3 image-align">
+                <img src="../../../../../assets/images/buttons/user2.png">
+            </div>
+            <div class="col-9">
+                <div><label class="content header-content">{{contactDetails['name']}}</label></div>
+                <label class="name-heading designation">{{contactDetails['designation']}}</label>
+                <div>
+                    <label class="message-button">
+                        <div class="button-inner">
+                            <img class="chat-box" src="../../../../../assets/images/buttons/white-chat.png">
+                            <span class="message-span">Message</span>
+                        </div>
+                    </label>
+                    <label class="label-button label-header user-icon" href="#!"><img class="bars img-less-greater"
+                            src="../../../../../assets/images/buttons/chat.png"></label>
+                    <label class="label-button label-header user-icon" href="#!"><img class="bars img-less-greater"
+                            src="../../../../../assets/images/buttons/phone.png"></label>
+                    <label class="label-button label-header user-icon" href="#!"><img class="bars img-less-greater"
+                            src="../../../../../assets/images/buttons/dots.png"></label>
+                </div>
+            </div>
+        </div>
+        <div class="row detail-section">
+            <div class="col-0 left-section">
+                <label class="name-heading designation">Bio</label>
+            </div>
+            <div class="col-11 right-section">
+                <label class="bio-details">{{contactDetails['bio']}}</label>
+            </div>
+        </div>
+        <div class="row detail-section">
+            <div class="col-0 left-section">
+                <label class="name-heading designation">Email</label>
+            </div>
+            <div class="col-11 right-section">
+                <div *ngFor="let email of contactDetails.email; let i = index"><label class="bio-details">{{email}}</label><label *ngIf="i==0" class="orig-button">Primary</label></div>
+            </div>
+        </div>
+        <div class="row detail-section">
+            <div class="col-0 left-section">
+                <label class="name-heading designation">Dial</label>
+            </div>
+            <div class="col-11 right-section">
+                <label class="bio-details">{{contactDetails.dial}}</label>
+            </div>
+        </div>
+        <div class="row detail-section">
+            <div class="col-0 left-section">
+                <label class="name-heading designation">Meeting</label>
+            </div>
+            <div class="col-11 right-section">
+                <label class="bio-details">{{contactDetails.meetings}}</label>
+            </div>
+        </div>
+        <div class="row detail-section">
+            <div class="col-0 left-section">
+                <label class="name-heading designation">Phone</label>
+            </div>
+            <div class="col-11 right-section">
+                <div *ngFor="let phone of contactDetails.phone; let i = index"><label class="bio-details">{{phone}}</label><label *ngIf="i==0"  class="orig-button">Primary</label></div>
+            </div>
+        </div>
+        <div class="row detail-section">
+            <div class="col-0 left-section">
+                <label class="name-heading designation">Social</label>
+            </div>
+            <div class="col-11 right-section">
+                <label class="label-button label-header user-icon" href="#!"><img class="bars img-less-greater"
+                        src="../../../../../assets/images/buttons/chat.png"></label>
+                <label class="label-button label-header user-icon" href="#!"><img class="bars img-less-greater"
+                        src="../../../../../assets/images/buttons/phone.png"></label>
+                <label class="label-button label-header user-icon" href="#!"><img class="bars img-less-greater"
+                        src="../../../../../assets/images/buttons/dots.png"></label>
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,54 @@
+html, body {
+    margin:0px;
+    height:100%;
+    background-color: #fff !important;
+    overflow-x: clip;
+}
+.top-section {
+    margin-left: 134px;
+    margin-top: 62px;
+}
+
+.message-button {
+    background: #6B59CC;
+    width: 122px;
+    height: 42px;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.button-inner {
+    margin-top: 8px;
+}
+
+.image-align {
+    text-align: right;
+}
+
+.detail-section {
+    margin-top: 39px;
+}
+
+.left-section {
+    text-align: right;
+}
+
+.right-section {
+    margin-left: 10px;
+}
+
+.designation {
+    font-size: 14px;
+    line-height: 21px;
+    word-spacing: 1px;
+}
+.orig-button{
+    float: right;
+    width: 76px;
+    height: 28px;
+    border-radius: 8px;
+    text-align: center;
+    background: #F3F4F9;
+}

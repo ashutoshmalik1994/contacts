@@ -1,0 +1,32 @@
+<body>
+    <app-header></app-header>
+    <div class="main-container">
+        <div class="search-box">
+            <input type="text" class="input-text" placeholder="Search for a contact">
+        </div>
+        <div class="search-box-content row">
+            <div class="col-6">
+                <label class="search-placeholder">Name, email or phone number</label>
+            </div>
+            <div class="col-6 searchdiv">
+                <label class="searchicon"><img class="img-search-icon" src="../../../../../assets/images/buttons/search.png"></label>
+            </div>
+        </div>
+        <div class="table-content user-content" *ngFor="let contactItem of contacts">
+            <div (click)="userInfo(contactItem['id'])" class="user-info row">
+                <div class="col-6 row">
+                    <div class="col-0"><img class="user-img" src="../../../../../assets/images/buttons/user.png"></div>
+                    <div class="col-6">
+                        <div><label class="name-heading">{{contactItem['name']}}</label></div>
+                        <label class="name-heading designation">{{contactItem['designation']}}</label>
+                    </div>
+                </div>
+                <div class="col-6 icons-chat">
+                    <label class="label-button label-header user-icon" href="#!"><img class="bars img-less-greater" src="../../../../../assets/images/buttons/chat.png"></label>
+                    <label class="label-button label-header user-icon" href="#!"><img class="bars img-less-greater" src="../../../../../assets/images/buttons/phone.png"></label>
+                    <label class="label-button label-header user-icon" href="#!"><img class="bars img-less-greater" src="../../../../../assets/images/buttons/dots.png"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
